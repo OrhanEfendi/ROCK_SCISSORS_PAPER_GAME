@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      .size {
+        height: 800px;
+      }
+      .back {
+        background-image: url("https://wallpapercave.com/wp/wp8122132.jpg");
+        background-size: cover;
+      }
+      .over {
+        overflow: hidden;
+      }
+    </style>
+    <title>rpc-game</title>
+  </head>
+  <body class="back">
+    <div
+      id="btnDiv"
+      class="d-flex justify-content-center align-items-center size d-inline"
+    >
+      <button id="btnStartEl" type="button" class="btn btn-success">
+        Start
+      </button>
+    </div>
+    <main class="container">
+      <div
+        id="gameCard"
+        class="d-flex gap-5 p-5 d-flex d-none justify-content-center align-items-center"
+      >
+        <div class="card p-4" style="width: 18rem">
+          <img
+            id="userImg"
+            width="200"
+            src="./alerts/images/r.png"
+            class="card-img-top over"
+            alt="..."
+          />
+          <div class="card-body">
+            <h4 id="usersName" class="card-title text-center h2"></h4>
+            <h5 id="resultUser" class="card-title text-center h3"></h5>
+            <h6 id="pointUser" class="card-title text-center h4"></h6>
+          </div>
+        </div>
+        <div
+          class="display-1 d-flex justify-content-center align-items-center text-success fw-bold"
+        >
+          VS
+        </div>
+        <div class="card p-4" style="width: 18rem">
+          <img
+            id="compImg"
+            width="200"
+            src="./alerts/images/r.png"
+            class="card-img-top over"
+            alt="..."
+          />
+          <div class="card-body">
+            <h4 id="CompName" class="card-title text-center h2">Computer</h4>
+            <h5 id="resultComp" class="card-title text-center h3"></h5>
+            <h6 id="pointComp" class="card-title text-center h4"></h6>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./index.js" defer></script>
+  </body>
+</html>
